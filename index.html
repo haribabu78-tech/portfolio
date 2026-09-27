@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haribabu | Full-Stack & AI Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b1120;
+            color: #f8fafc;
+        }
+
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.1);
+        }
+
+        .glow-effect {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            top: -100px;
+            left: -100px;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-sky-500 selection:text-slate-900 relative overflow-x-hidden">
+
+    <!-- Background Accent Lights -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 glass-card border-b border-slate-800/80 bg-slate-900/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#about" class="code-font text-sky-400 font-bold text-lg tracking-tight hover:text-sky-300 transition">
+                &lt;Haribabu /&gt;
+            </a>
+            <div class="flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition">About</a>
+                <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+                <a href="#hackathons" class="hover:text-sky-400 transition">Hackathons</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-grow space-y-24 z-10">
+
+        <!-- Hero Section -->
+        <section id="about" class="pt-8 flex flex-col items-start space-y-6 relative">
+            <div class="glow-effect"></div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-none">
+                Hi, I'm <span class="gradient-text">Haribabu</span>
+            </h1>
+            
+            <p class="text-slate-300 text-lg md:text-xl max-w-3xl leading-relaxed">
+                Full-Stack & Intelligent Systems Developer specializing in rapid prototyping, clean architecture, and building production-ready web applications across React, Node.js, and Java technology stacks.
+            </p>
+
+            <!-- Social Links -->
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="https://github.com/haribabu78-tech/haribabukondra" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-200 font-medium text-sm flex items-center space-x-2.5 transition">
+                    <i class="fab fa-github text-lg"></i>
+                    <span>GitHub Profile</span>
+                </a>
+                <a href="https://www.linkedin.com/in/hari-babu-kondra-8267a9259" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium text-sm flex items-center space-x-2.5 transition shadow-lg shadow-sky-600/20">
+                    <i class="fab fa-linkedin text-lg"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="space-y-6">
+            <div class="flex flex-col space-y-1">
+                <h2 class="text-2xl font-bold text-slate-100 flex items-center space-x-2">
+                    <span class="text-sky-400 code-font">01.</span>
+                    <span>Technical Capabilities</span>
+                </h2>
+                <p class="text-slate-400 text-sm">Core technologies used to build scalable prototypes and applications.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Languages -->
+                <div class="glass-card p-6 rounded-xl space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-code text-sky-400 text-xl"></i>
+                        <h3 class="text-lg font-semibold text-slate-100">Languages</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">Java</span>
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">JavaScript (ES6+)</span>
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="glass-card p-6 rounded-xl space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-desktop text-indigo-400 text-xl"></i>
+                        <h3 class="text-lg font-semibold text-slate-100">Frontend & UI</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">React.js</span>
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">HTML5/CSS3</span>
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">DOM Mechanics</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Database -->
+                <div class="glass-card p-6 rounded-xl space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-server text-emerald-400 text-xl"></i>
+                        <h3 class="text-lg font-semibold text-slate-100">Backend & Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">Node.js</span>
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">REST APIs</span>
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">MySQL</span>
+                        <span class="px-3 py-1 bg-slate-800/80 rounded-md text-xs font-mono text-slate-300 border border-slate-700/50">Git / GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="space-y-6">
+            <div class="flex flex-col space-y-1">
+                <h2 class="text-2xl font-bold text-slate-100 flex items-center space-x-2">
+                    <span class="text-sky-400 code-font">02.</span>
+                    <span>Featured Work</span>
+                </h2>
+                <p class="text-slate-400 text-sm">Key architectural implementations and practical systems built.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project Card 1 -->
+                <div class="glass-card p-6 rounded-xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold text-slate-100">Legal Mate AI</h3>
+                            <span class="px-2.5 py-1 bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xs font-mono rounded-md">AI / Web Platform</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            An assistant-based legal research platform designed for fast contextual document lookup, case reference mapping, and automated statutory analysis.
+                        </p>
+                        <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                            <li>Implemented dynamic prompt processing for legal queries.</li>
+                            <li>Engineered clean frontend interfaces for smooth search retrieval.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4 pt-2 border-t border-slate-800">
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+                            <span>React</span> • <span>Node.js</span> • <span>REST APIs</span> • <span>SQL</span>
+                        </div>
+                        <a href="https://github.com/haribabu78-tech/legalmate-case-management" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-sm font-medium text-sky-400 hover:text-sky-300 transition">
+                            <span>View Source Code</span>
+                            <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="glass-card p-6 rounded-xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold text-slate-100">Operations Dashboard</h3>
+                            <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono rounded-md">Data Pipeline</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            A high-throughput monitoring dashboard created to aggregate operational workflow metrics, analyze ETL pipelines, and visualize system status in real time.
+                        </p>
+                        <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                            <li>Structured real-time data handling for efficient reporting.</li>
+                            <li>Designed modular React UI components for tracking key performance metrics.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4 pt-2 border-t border-slate-800">
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+                            <span>JavaScript</span> • <span>Node.js</span> • <span>ETL Principles</span> • <span>Tailwind</span>
+                        </div>
+                        <a href="https://github.com/haribabu78-tech/pipeline-operations-management" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-sm font-medium text-sky-400 hover:text-sky-300 transition">
+                            <span>View Source Code</span>
+                            <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hackathons & Track Record Section -->
+        <section id="hackathons" class="space-y-6">
+            <div class="flex flex-col space-y-1">
+                <h2 class="text-2xl font-bold text-slate-100 flex items-center space-x-2">
+                    <span class="text-sky-400 code-font">03.</span>
+                    <span>Hackathons & Track Record</span>
+                </h2>
+                <p class="text-slate-400 text-sm">Demonstrated track record in high-speed development events and training.</p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl space-y-6">
+                <!-- Entry 1 -->
+                <div class="border-l-2 border-sky-400 pl-4 space-y-1.5">
+                    <div class="flex flex-wrap justify-between items-center">
+                        <h3 class="text-base font-semibold text-slate-200">GenAI Hackathon Participant</h3>
+                        <span class="text-xs text-sky-400 code-font">JNTU Gurajada Vizianagaram</span>
+                    </div>
+                    <p class="text-sm text-slate-300">
+                        Rapidly designed and built an AI prototype within competitive sprint timelines, demonstrating API integration and full-stack workflow execution.
+                    </p>
+                </div>
+
+                <!-- Entry 2 -->
+                <div class="border-l-2 border-slate-700 pl-4 space-y-1.5">
+                    <div class="flex flex-wrap justify-between items-center">
+                        <h3 class="text-base font-semibold text-slate-200">Java Full Stack & MEAN Stack Development</h3>
+                        <span class="text-xs text-slate-400 code-font">Specialized Diploma & Certification Programs</span>
+                    </div>
+                    <p class="text-sm text-slate-300">
+                        Completed extensive coursework covering end-to-end full-stack development, database schema modeling, modular API architecture, and modern JavaScript frameworks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
